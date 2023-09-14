@@ -12,16 +12,3 @@ services:
             MYSQL_PASSWORD: root
         ports:
             - "3306:3306"
-
-    frontend:
-        build:
-            context: ./frontend
-            dockerfile: Dockerfile
-        ports:
-            - "8000:3000"
-    backend:
-        build:
-            context: ./backend
-            dockerfile: Dockerfile
-        ports:
-            - "8080:8080"
